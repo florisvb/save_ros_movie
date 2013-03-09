@@ -1,0 +1,18 @@
+<package>
+  <description brief="save_ros_movie">
+
+     save_movie
+
+  </description>
+  <author>Floris van Breugel</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/save_movie</url>
+  <depend package="rospy"/>
+  <depend package="sensor_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="cv_bridge"/>
+
+</package>
+
+
