@@ -53,7 +53,8 @@ class Save:
         if toggleSavingVideo.save is True:
         
             # get time, to generate unique names
-            name = self.topicVideo.split('/')[0] + '_' + time.strftime("%Y%m%d_%s")
+            basename = self.topicVideo.lstrip('/')
+            name = basename.replace('/', '_') + '_' + time.strftime("%Y%m%d_%s")
             self.filenameVideo = name + '.mov'
             self.filenameFrameInfo = name + '.pickle'
             
